@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Rim Prototype - 生物质核心</name>
+	<author>Hjx</author>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>Hjx.BiomassNucleus</packageId>
+	<description>
+添加了一个新的神器(需要先触发巨石)
+    (可以在虚空石碑附近找到)
+    小人使用后，会获得一个“生物质”状态条
+    以及三种武器形态：利爪、利刃、护盾
+除此之外，没有其他获取方式，并且只能同时存在一个。
+---------------------------------------------------------------------------
+New Artifact Added
+    (The artifact was found near the VoidMonolith.)
+    Upon use by the pawn, a "Biomass" status bar is gained.
+    Three weapon forms are unlocked: Claws, Blade, and Shield.
+There are no other ways to obtain it, and only one can exist at a time.
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Anomaly</packageId>
+			<displayName>Anomaly</displayName>
+		</li>
+	</modDependencies>
+
+
+</ModMetaData>

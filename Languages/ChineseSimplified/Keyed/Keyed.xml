@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <BiomassNodeNoPawns>没有合适人选</BiomassNodeNoPawns>
+    <Need_900_biomass>需要900点生物质</Need_900_biomass>
+    <Incubate>孵化</Incubate>
+    <cancerIncubate>中止孵化</cancerIncubate>
+    <IncubateButtonDesc>当宿主的肉体被破坏后，其意识能够暂时寄存在核心内部。\n\n提供足够的生物质用来孵化新的身体，将其与生物质核心分离。</IncubateButtonDesc>
+    <Consume_Food>吞噬食物</Consume_Food>
+    <Consume_Corpse>吞噬尸体</Consume_Corpse>
+    <Get_biomass>获取生物质</Get_biomass>
+    <Getting_biomass>正在获取生物质</Getting_biomass>
+    <Biomass>生物质</Biomass>
+    <Give_blood>给予血液</Give_blood>
+    <Giving_blood>正在给予血液</Giving_blood>
+    <BiomassNucleus>生物质核心</BiomassNucleus>
+    <Clawform_damage>利爪伤害倍率</Clawform_damage>
+    <Clawform_ArmorPenetration>利爪穿甲倍率</Clawform_ArmorPenetration>
+    <Bladeform_damage>利刃伤害倍率</Bladeform_damage>
+    <Bladeform_ArmorPenetration>利刃穿甲倍率</Bladeform_ArmorPenetration>
+    <NoMissingPart>复原缺失的手臂</NoMissingPart>
+    <BMN_Settingtip1>用来兼容远古无定形</BMN_Settingtip1>
+
+    <Integrate_count>同化计数</Integrate_count>
+    <Insufficient_biomass>生物质不足</Insufficient_biomass>
+    <AbilityDisabledNoBiomass>没有生物质</AbilityDisabledNoBiomass>
+    <NoSpareBodyPart>没有空余的身体部位</NoSpareBodyPart>
+    <BiomassCost>生物质消耗</BiomassCost>
+    <Remaining_incubation_time>剩余孵化时间</Remaining_incubation_time>
+    <IntegrateFailMessage>目标仍有反抗能力</IntegrateFailMessage>
+    <MessageNoFlesh>不是血肉之躯</MessageNoFlesh>
+    <DisableLethalDamageThreshold>禁用致命伤害阈值（解除小人总血量150的限制）</DisableLethalDamageThreshold>
+
+    <clawIcon_desc>将一部分生物质转移到手臂，聚合成利爪\n 解除变形后，构成利爪的这部分生物质会返还。\n 但如果利爪受损了，这部分生物质也会相应损失。</clawIcon_desc>
+    <bladeIcon_desc>将一部分生物质转移到手臂，聚合成利刃\n 解除变形后，构成利刃的这部分生物质会返还。\n 但如果利刃受损了，这部分生物质也会相应损失。</bladeIcon_desc>
+    <shieldIcon_desc>将一部分生物质转移到手臂，聚合成护盾\n 解除变形后，构成护盾的这部分生物质会返还。\n 但如果护盾受损了，这部分生物质也会相应损失。</shieldIcon_desc>
+
+    <!-- Letter -->
+    <Anomaly_heart>怪异的“心脏”</Anomaly_heart>
+    <Anomaly_heart_text>似乎是感应到了{PAWN_nameDef}的靠近，附着在石碑上的一些黑色污渍重新活化了。\n 
+  它们像液体般汇集\n
+  最终聚合成了一颗黑色的心脏。</Anomaly_heart_text>
+
+    <Use_BiomassNucleus>生物质核心</Use_BiomassNucleus>
+    <Use_BiomassNucleus_text>生物质核心能够转化血肉生物体内的生物质，\n借此使用各种特殊能力。\n \n同化其他生物，补充自身生物质\n同化不同种族的生物，提升同化计数\n
+  随着同化计数的提升，宿主的能力也会逐渐增强。</Use_BiomassNucleus_text>
+    
+    <lost_BiomassNucleus>失去了生物质核心</lost_BiomassNucleus>
+    <lost_Anomaly_heart>这颗心脏突然整个融化掉消失了</lost_Anomaly_heart>
+    
+    <BMN_GainTrait>新特性获得</BMN_GainTrait>
+    <BMN_GainTrait_text>生物质能量涌动，{0}获得新特性：{1}</BMN_GainTrait_text>
+
+    <IntegrateImmunityComplete>智慧种同化完成</IntegrateImmunityComplete>
+
+    <Abstract_Archite_Gene>{0}的基因开始重组，是否将超凡基因：{1}加入到系谱基因中?</Abstract_Archite_Gene>
+    <BMN_Confirm>确认(可转载超凡基因数量:{0})</BMN_Confirm>
+    <BMN_Cancel>拒绝(需再等待17天左右)</BMN_Cancel>
+    
+    <check_domaint>黑光-显性基因开始发作</check_domaint>
+    <first_success>{0}通过了首次的基因筛选</first_success>
+    <first_failed>{0}首次的基因筛选失败，陷入了昏迷</first_failed>
+
+    <second_success>{0}通过了第二次的基因筛选</second_success>
+    <second_failed>{0}第二次的基因筛选失败，陷入了昏迷</second_failed>
+
+    <third_success>{0}通过了第三次的基因筛选，将成为进化种</third_success>
+    <third_failed>{0}第三次的基因筛选失败，陷入了昏迷</third_failed>
+
+    <BMN_GeneExtractionComplete>额外收获，{PAWN_nameDef}的超凡基因已提取</BMN_GeneExtractionComplete>
+
+    <BMN_transform_xenotype>系谱基因：黑光-隐性\n\n该基因正在改变{0}的异种类型，改变方向为：进化种，此过程不会改变角色的异种基因</BMN_transform_xenotype>
+    <BMN_transform>异种演变</BMN_transform>
+
+    <Host_is_unqualified>{0}的基因转变失败，原因：角色种类为{1}</Host_is_unqualified>
+    <Host_failed>异种胚芽植入出错</Host_failed>
+
+    <IntegrateFaildMessage>无法同化</IntegrateFaildMessage>
+</LanguageData>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <XenotypeDef>
+        <defName>Evolver</defName>
+        <label>evolver</label>
+        <description>The origin of the Evolvers is the same as other Xenotype: the Homo sapiens species. However, unlike other aberrant humans formed through modification by transcendent intelligence, the creation of Evolvers stems more from the genes' own selection—even if this genetic mutation resulted from infection by a virus within the Anomaly heart.\n\nEvolvers possess formidable adaptive and regenerative capabilities, along with powerful dominance at the genetic level. This also means they have shorter genetic restructuring times, enabling them to combine more genes.</description>
+        <descriptionShort>Highly adaptable and continuously evolving, with the potential to become all-around capable.</descriptionShort>
+        <iconPath>Hjx_BiomassNucleus/Evolver</iconPath>
+        <inheritable>true</inheritable>
+        <canGenerateAsCombatant>false</canGenerateAsCombatant>
+        <factionlessGenerationWeight>0</factionlessGenerationWeight>
+        <genes>
+            <li>Beauty_Pretty</li>
+            <li>DarkVision</li>
+            <li>KindInstinct</li>
+            <li>Aggression_DeadCalm</li>
+            <li>WoundHealing_Fast</li>
+            <li>BMN_Black_Light_Recessive</li>
+        </genes>
+    </XenotypeDef>
+</Defs>

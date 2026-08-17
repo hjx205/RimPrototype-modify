@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <AbilityDef>
+        <defName>BMN_Evolution_inferior</defName>
+        <label>Adapt Evolution</label>
+        <description>The special ability of the Evolver: Upon activation, the character can evolve corresponding armor based on damage received, subject to a maximum limit. For characters possessing a Biomass Core, a Biomass Exoskeleton forms on their body surface. While Biomass remains, the Exoskeleton can infinitely enhance armor with each hit taken.</description>
+        <iconPath>Hjx_BiomassNucleus/EvolverAdaptionIcon</iconPath>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <hostile>false</hostile>
+        <groupAbility>true</groupAbility>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <aiCanUse>true</aiCanUse>
+        <ai_IsOffensive>true</ai_IsOffensive>
+        <targetRequired>false</targetRequired>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <statBases>
+            <Ability_Duration>40</Ability_Duration>
+        </statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <requireLineOfSight>false</requireLineOfSight>
+            <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+            <targetable>false</targetable>
+            <targetParams>
+                <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilityGiveHediff">
+                <compClass>CompAbilityEffect_GiveHediff</compClass>
+                <hediffDef>Hediff_Adaptiveform</hediffDef>
+                <onlyApplyToSelf>true</onlyApplyToSelf>
+                <replaceExisting>true</replaceExisting>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>

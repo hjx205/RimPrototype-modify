@@ -1,0 +1,12 @@
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\ClassLibrary1\obj\Debug\BiomassNucleus.csproj.AssemblyReference.cache
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\ClassLibrary1\obj\Debug\BiomassNucleus.csproj.CoreCompileInputs.cache
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Assemblies\BiomassNucleus.dll
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Assemblies\BiomassNucleus.pdb
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\ClassLibrary1\obj\Debug\BiomassNucleus.dll
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\ClassLibrary1\obj\Debug\BiomassNucleus.pdb
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\1.5\Assemblies\BiomassNucleus.dll
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\1.5\Assemblies\BiomassNucleus.pdb
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\1.5\Source\ClassLibrary1\obj\Debug\BiomassNucleus.csproj.AssemblyReference.cache
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\1.5\Source\ClassLibrary1\obj\Debug\BiomassNucleus.csproj.CoreCompileInputs.cache
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\1.5\Source\ClassLibrary1\obj\Debug\BiomassNucleus.dll
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\1.5\Source\ClassLibrary1\obj\Debug\BiomassNucleus.pdb

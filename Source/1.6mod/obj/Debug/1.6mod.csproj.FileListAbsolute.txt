@@ -1,0 +1,13 @@
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\1.6\Assemblies\BiomassNucleus.dll
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\1.6\Assemblies\BiomassNucleus.pdb
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\1.6mod\obj\Debug\1.6mod.csproj.AssemblyReference.cache
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\1.6mod\obj\Debug\1.6mod.csproj.CoreCompileInputs.cache
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\1.6mod\obj\Debug\BiomassNucleus.dll
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\1.6mod\obj\Debug\BiomassNucleus.pdb
+E:\steam\steamapps\common\RimWorld\Mods\虐杀原型-生物的进化\1.6\Assemblies\BiomassNucleus.dll
+E:\steam\steamapps\common\RimWorld\Mods\虐杀原型-生物的进化\1.6\Assemblies\BiomassNucleus.pdb
+E:\steam\steamapps\common\RimWorld\Mods\虐杀原型-生物的进化\Source\1.6mod\obj\Debug\1.6mod.csproj.AssemblyReference.cache
+E:\steam\steamapps\common\RimWorld\Mods\虐杀原型-生物的进化\Source\1.6mod\obj\Debug\1.6mod.csproj.CoreCompileInputs.cache
+E:\steam\steamapps\common\RimWorld\Mods\虐杀原型-生物的进化\Source\1.6mod\obj\Debug\BiomassNucleus.dll
+E:\steam\steamapps\common\RimWorld\Mods\虐杀原型-生物的进化\Source\1.6mod\obj\Debug\BiomassNucleus.pdb
+E:\steam\steamapps\common\RimWorld\Mods\虐杀原型-生物的进化\Source\1.6mod\obj\Debug\1.6mod.csproj.CopyComplete

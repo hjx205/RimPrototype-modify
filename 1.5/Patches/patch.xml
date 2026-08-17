@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="VoidMonolith"]/comps</xpath>
+        <value>
+            <li Class="Hjx_BiomassNucleus.CompProperties_SpawnAndLetter">
+                <radius>6</radius>
+                <letterDef>PositiveEvent</letterDef>
+            </li>
+        </value>
+    </Operation>
+</Patch>

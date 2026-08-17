@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+    <!-- 同化 -->
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>BMN_Integrate</defName>
+        <label>Integrate</label>
+        <description>Consume other creatures to replenish your own biomass.\n The target must be in a state of no resistance \n(Downed or health below 20%).\n Small animals can be directly consumed.\n\n Consuming creatures of different races will increase the Integrate level, enhancing various aspects of your abilities.</description>
+        <iconPath>Hjx_BiomassNucleus/IntegrateIcon</iconPath>
+        <displayOrder>100</displayOrder>
+        <warmupMote>Mote_BMN_Integrate</warmupMote>
+        <warmupEffecter>BMN_Integrate_Warmup</warmupEffecter>
+        <hostile>true</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <range>-1</range> <!-- 施法距离,负值表示无限制-->
+            <warmupTime>2</warmupTime>
+            <targetParams>
+                <canTargetSelf>false</canTargetSelf>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="Hjx_BiomassNucleus.CompProperties_Integrate" />
+        </comps>
+    </AbilityDef>
+
+    <!-- 生物质节点 -->
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>BMN_BiomassNode</defName>
+        <label>Biomass Node</label>
+        <description>Place a Biomass Node.It can recycle surrounding biomass,And store it within the node.</description>
+        <iconPath>Hjx_BiomassNucleus/BiomassNudeIcon</iconPath>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <displayOrder>100</displayOrder>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+            <verbClass>Verb_CastAbilityTouch</verbClass>
+            <drawAimPie>false</drawAimPie>
+            <range>-1</range>
+            <warmupTime>2</warmupTime>
+            <targetParams>
+                <canTargetLocations>true</canTargetLocations>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetBuildings>false</canTargetBuildings>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="CompProperties_AbilitySpawn">
+                <thingDef>BMN_Building_BiomassNode</thingDef>
+                <allowOnBuildings>False</allowOnBuildings>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDefs>
+                    <li>DustPuffThick</li>
+                </fleckDefs>
+                <sound>BuildingDestroyed_Stone_Small</sound>
+                <scale>1.62</scale>
+                <preCastTicks>5</preCastTicks>
+            </li>
+            <li Class="Hjx_BiomassNucleus.CompProperties_AbilityBiomassCost">
+                <biomassCost>30</biomassCost>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 地刺 -->
+    <AbilityDef Name="BMN_GroundSpike">
+        <defName>BMN_GroundSpike</defName>
+        <label>Ground spike</label>
+        <description>Inject biomass into the ground to inflict a spiky attack on targets within the specified range.</description>
+        <iconPath>Hjx_BiomassNucleus/GroundSpikeIcon</iconPath>
+        <cooldownTicksRange>1800</cooldownTicksRange>
+        <showPsycastEffects>false</showPsycastEffects>
+        <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <warmupSound>AnomalyAbilityWarmup</warmupSound>
+        <hostile>true</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <writeCombatLog>true</writeCombatLog>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <warmupTime>1.5</warmupTime>
+            <range>24.9</range>
+            <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            <targetParams> <!-- 目标参数 -->
+                <canTargetSelf>false</canTargetSelf>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <statBases>
+            <Ability_EffectRadius>3.9</Ability_EffectRadius>
+        </statBases>
+        <comps>
+            <li Class="Hjx_BiomassNucleus.CompProperties_GroundSpike" />
+            <li Class="Hjx_BiomassNucleus.CompProperties_AbilityBiomassCost">
+                <biomassCost>40</biomassCost>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+                <fleckDefs>
+                    <li>BMN_GroundSpikeCracks</li>
+                    <li>DustPuff</li>
+                    <li>DustPuffThick</li>
+                    <li>BMN_GroundSpikeRing</li>
+                </fleckDefs>
+                <scale>2</scale>
+                <sound>BuildingDestroyed_Stone_Big</sound>
+                <preCastTicks>1</preCastTicks>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 冲锋斩杀 -->
+    <AbilityDef Name="BladeSprint">
+        <defName>BMN_BladeSprint</defName>
+        <label>Blade sprint</label>
+        <description>Consumes a large amount of biomass to unleash a burst of speed, delivering six consecutive slashes to targets ahead.</description>
+        <iconPath>Hjx_BiomassNucleus/BladeSprintIcon</iconPath>
+        <cooldownTicksRange>1200</cooldownTicksRange>
+        <showPsycastEffects>false</showPsycastEffects>
+        <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+        <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <jobDef>CastJump</jobDef>
+        <hostile>true</hostile>
+        <ai_IsOffensive>true</ai_IsOffensive>
+        <aiCanUse>false</aiCanUse>
+        <verbProperties>
+            <verbClass>Hjx_BiomassNucleus.Verb_CastAbilityBladeSprint</verbClass>
+            <label>blade sprint</label>
+            <range>14.9</range> <!-- 冲锋距离 -->
+            <requireLineOfSight>true</requireLineOfSight>
+            <warmupTime>0.25</warmupTime>
+            <soundCast>Pawn_Devourer_Jump</soundCast>
+            <soundLanding>Pawn_Devourer_Land</soundLanding>
+            <targetParams>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="Hjx_BiomassNucleus.CompProperties_BladeSprint">
+                <effecterDef>BMN_BladeSprint</effecterDef>
+                <maintainForTicks>60</maintainForTicks>
+                <scale>1.5</scale>
+            </li>
+            <li Class="Hjx_BiomassNucleus.CompProperties_AbilityBiomassCost">
+                <biomassCost>60</biomassCost>
+            </li>
+        </comps>
+    </AbilityDef>
+
+    <!-- 空中冲刺能力 -->
+    <AbilityDef Name="BMN_AirDash">
+        <defName>BMN_AirDash</defName>
+        <label>Air dash</label>
+        <description>Gathers biomass into the legs, instantly enhancing jumping ability.</description>
+        <iconPath>Hjx_BiomassNucleus/LongjumpIcon</iconPath>
+        <cooldownTicksRange>600</cooldownTicksRange>
+        <showPsycastEffects>true</showPsycastEffects>
+        <sendMessageOnCooldownComplete>false</sendMessageOnCooldownComplete>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <jobDef>CastJump</jobDef>
+        <ai_IsOffensive>true</ai_IsOffensive>
+        <aiCanUse>true</aiCanUse>
+        <verbProperties>
+            <verbClass>Hjx_BiomassNucleus.Verb_CastAbilityLongjump</verbClass>
+            <label>blade sprint</label>
+            <range>19.9</range>
+            <requireLineOfSight>true</requireLineOfSight>
+            <warmupTime>1</warmupTime>
+            <soundCast>Pawn_Devourer_Jump</soundCast>
+            <soundLanding>Pawn_Devourer_Land</soundLanding>
+            <targetParams>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetPawns>false</canTargetPawns>
+                <canTargetLocations>true</canTargetLocations>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="Hjx_BiomassNucleus.CompProperties_AbilityBiomassCost">
+                <biomassCost>20</biomassCost>
+            </li>
+        </comps>
+    </AbilityDef>
+</Defs>

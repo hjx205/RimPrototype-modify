@@ -1,0 +1,7 @@
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Assemblies\ClassLibrary1.dll
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Assemblies\ClassLibrary1.pdb
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.AssemblyReference.cache
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CopyComplete
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+E:\steam\steamapps\common\RimWorld\Mods\[测试]生物质核心\Source\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

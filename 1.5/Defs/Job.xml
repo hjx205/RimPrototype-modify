@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <JobDef>
+        <defName>GetBiomass</defName>
+        <driverClass>Hjx_BiomassNucleus.JobDriver_GetBiomass</driverClass>
+        <reportString>getting biomass from TargetA</reportString>
+    </JobDef>
+
+    <JobDef>
+        <defName>ResurrectGiveBlood</defName>
+        <driverClass>Hjx_BiomassNucleus.JobDriver_ResurrectGiveBlood</driverClass>
+        <reportString>give blood from TargetA</reportString>
+    </JobDef>
+</Defs>

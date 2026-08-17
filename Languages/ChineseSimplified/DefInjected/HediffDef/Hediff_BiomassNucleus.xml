@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <!-- 生物质核心 -->
+    <Hediff_BiomassNucleus.label>生物质核心</Hediff_BiomassNucleus.label>
+    <Hediff_BiomassNucleus.description>这颗核心完全融入了宿主的身体，在细胞层面上已经无法分出两者的区别。</Hediff_BiomassNucleus.description>
+
+    <Hediff_clawformL.label>利爪形态</Hediff_clawformL.label>
+    <Hediff_clawformL.description>一只由生物质聚合而成的利爪。其攻击速度、穿透性会随同化计数的增加而成长。</Hediff_clawformL.description>
+    <Hediff_clawformL.comps.HediffComp_VerbGiver.tools.claw.label>爪</Hediff_clawformL.comps.HediffComp_VerbGiver.tools.claw.label>
+
+    <Hediff_clawformR.label>利爪形态</Hediff_clawformR.label>
+    <Hediff_clawformR.description>一只由生物质聚合而成的利爪。其攻击速度、穿透性会随同化计数的增加而成长。</Hediff_clawformR.description>
+    <Hediff_clawformR.comps.HediffComp_VerbGiver.tools.claw.label>爪</Hediff_clawformR.comps.HediffComp_VerbGiver.tools.claw.label>
+
+    <Hediff_bladeform.label>利刃形态</Hediff_bladeform.label>
+    <Hediff_bladeform.description>一只由生物质聚合而成的利刃，拥有极强的破坏力和机动性。其攻击速度、攻击力、穿透性、会随同化计数的增加而成长。</Hediff_bladeform.description>
+    <Hediff_bladeform.comps.HediffComp_VerbGiver.tools.blade.label>刃</Hediff_bladeform.comps.HediffComp_VerbGiver.tools.blade.label>
+
+    <Hediff_shieldform.label>护盾形态</Hediff_shieldform.label>
+    <Hediff_shieldform.description>一面由生物质聚合而成的护盾，给予宿主恐怖的再生能力。但再生的过程需要消耗大量生物质。</Hediff_shieldform.description>
+
+    <Hediff_Adaptiveform.label>适应形态</Hediff_Adaptiveform.label>
+    <Hediff_Adaptiveform.description>由生物质核心/次生质核心激活角色基因的表达潜能，能使皮肤受到伤害后迅速做出反应，获得对应的抗性。拥有生物质核心的角色，甚至可以在体表生成一套装甲，该装甲拥有无限进化的可能性，但这个过程会消耗大量的生物质。</Hediff_Adaptiveform.description>
+
+    <Hediff_BMN_dying.label>残血</Hediff_BMN_dying.label>
+</LanguageData>

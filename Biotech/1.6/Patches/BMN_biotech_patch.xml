@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Mines 2.0</li>
+        </mods>
+        <match Class="PatchOperationAddModExtension">
+            <xpath>Defs/ThingDef[defName="ArchiteCapsule"]</xpath>
+            <value>
+                <li Class="MinesAutomatedExtension.MineableSettings">
+                    <researchPrerequisites>
+                        <li>MinesAutomated_ResearchProjectDef_minecraft</li>
+                    </researchPrerequisites>
+                    <workOffset>800</workOffset>
+                    <mineableYield>1</mineableYield>
+                </li>
+            </value>
+        </match>
+    </Operation>
+</Patch>

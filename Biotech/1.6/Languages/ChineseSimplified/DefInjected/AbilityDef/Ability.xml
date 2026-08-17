@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LanguageData>
+    <BMN_Evolution_inferior.label>适应进化</BMN_Evolution_inferior.label>
+    <BMN_Evolution_inferior.description>进化种的特殊能力，激活后，角色能够根据受到的伤害进化出对应的护甲，存在上限；对于拥有生物质核心的角色，能够在体表形成生物质殖装，在生物质未消耗完之前，殖装可以随着受击无上限地提高护甲</BMN_Evolution_inferior.description>
+</LanguageData>

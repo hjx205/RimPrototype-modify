@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <BMN_Integrate.label>同化</BMN_Integrate.label>
+    <BMN_Integrate.description>吞噬其他生物，补充自身生物质。\n 目标必需处于没有反抗能力的状态\n（倒地、残血）。\n小体型动物可以直接吞噬。\n\n吞噬不同种族的生物将会提升同化计数，自身各方面能力也会随之提高。</BMN_Integrate.description>
+
+    <BMN_BiomassNode.label>生物质节点</BMN_BiomassNode.label>
+    <BMN_BiomassNode.description>召唤一个生物质节点，可以吞噬周围的营养物，并储存在节点内。</BMN_BiomassNode.description>
+
+    <BMN_GroundSpike.label>地刺</BMN_GroundSpike.label>
+    <BMN_GroundSpike.description>将生物质注入地面，对范围内目标造成尖刺打击。</BMN_GroundSpike.description>
+
+    <BMN_BladeSprint.label>冲锋斩杀</BMN_BladeSprint.label>
+    <BMN_BladeSprint.description>消耗大量生物质，以爆发性的速度，对前方目标释放连续6次斩击。</BMN_BladeSprint.description>
+
+    <BMN_AirDash.label>空中冲刺</BMN_AirDash.label>
+    <BMN_AirDash.description>将生物质聚集到腿部，瞬间增幅跳跃能力。</BMN_AirDash.description>
+
+    <BMN_Evolution.label>适应进化</BMN_Evolution.label>
+    <BMN_Evolution.description>进化种的特殊能力，激活后，角色能够根据受到的伤害进化出对应的护甲，存在上限；对于拥有生物质核心的角色，能够在体表形成生物质殖装，在生物质未消耗完之前，殖装可以随着受击无上限地提高护甲</BMN_Evolution.description>
+</LanguageData>

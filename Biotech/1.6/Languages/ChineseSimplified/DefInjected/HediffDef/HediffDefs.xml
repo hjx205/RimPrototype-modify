@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <BlackLightcoma.label>基因昏迷</BlackLightcoma.label>
+    <BlackLightcoma.description>这种昏迷发生在黑光基因对角色进行选择、筛选的时候。倘若无法通过，就会造成这种昏迷。昏迷往往会持续三天，角色苏醒后的第三天，基因会再次进行选择。</BlackLightcoma.description>
+
+    <Hediff_ParenchymaCore.label>次生质核心</Hediff_ParenchymaCore.label>
+    <Hediff_ParenchymaCore.description>次生质核心是进化种的标准器官，尽管与原型体的生物质核心相比有所不足，但仍能够让进化种拥有超出常人的再生能力，并提高他们的身体素质。</Hediff_ParenchymaCore.description>
+</LanguageData>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>PrototypeHelmet</defName>
+        <label>prototype helmet</label>
+        <description>A black liquid-like substance derived from the host's biomass forms a protective shell on its body surface, enhancing both visual acuity and respiratory capacity while providing defense.</description>
+        <tradeability>None</tradeability>
+        <smeltable>false</smeltable>
+        <graphicData>
+            <texPath>Hjx_BiomassNucleus/Apparel/PrototypeHelmet/Prototype_Helmet</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.7</drawSize>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>2000</MaxHitPoints>
+            <Mass>0.5</Mass>
+            <Flammability>0.2</Flammability>
+            <Insulation_Cold>12</Insulation_Cold>
+            <Insulation_Heat>12</Insulation_Heat>
+            <EquipDelay>0.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicResistance>1</ToxicResistance>
+            <AimingDelayFactor>-0.5</AimingDelayFactor>
+            <ShootingAccuracyPawn>8</ShootingAccuracyPawn>
+            <MeleeHitChance>8</MeleeHitChance>
+        </equippedStatOffsets>
+        <thingCategories Inherit="False">
+            <li>ArmorHeadgear</li>
+        </thingCategories>
+
+        <apparel>
+            <parentTagDef>ApparelHead</parentTagDef>
+            <bodyPartGroups>
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Hjx_BiomassNucleus/Apparel/PrototypeHelmet/Prototype_Helmet</wornGraphicPath>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <soundWear>Wear_PowerArmor</soundWear>
+            <soundRemove>Remove_PowerArmor</soundRemove>
+        </apparel>
+        <generateCommonality>0</generateCommonality>
+        <thingSetMakerTags/>
+        <generateAllowChance>0</generateAllowChance>
+    </ThingDef>
+
+    <ThingDef ParentName="ApparelNoQualityBase">
+        <defName>PrototypeArmor</defName>
+        <label>prototype armor</label>
+        <description>A black liquid substance derived from the host's biomass forms a protective shell on its body surface, enabling it to adapt to injuries while simultaneously enhancing the host's overall physical functions.</description>
+        <tradeability>None</tradeability>
+        <smeltable>false</smeltable>
+        <graphicData>
+            <texPath>Hjx_BiomassNucleus/Apparel/PrototypeArmor/Prototype_Armor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>3000</MaxHitPoints>
+            <Mass>2</Mass>
+            <Flammability>0.2</Flammability>
+            <Insulation_Cold>20</Insulation_Cold>
+            <Insulation_Heat>15</Insulation_Heat>
+            <EquipDelay>0.4</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>1.2</MoveSpeed>
+            <MeleeDodgeChance>8</MeleeDodgeChance>
+            <RangedCooldownFactor MayRequire="Ludeon.RimWorld.Biotech">-0.5</RangedCooldownFactor>
+        </equippedStatOffsets>
+        <thingCategories Inherit="False">
+            <li>ApparelArmor</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Neck</li>
+                <li>Torso</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Hjx_BiomassNucleus/Apparel/PrototypeArmor/Prototype_Armor</wornGraphicPath>
+            <layers>
+                <li>Middle</li>
+                <li>Shell</li>
+            </layers>
+            <useDeflectMetalEffect>true</useDeflectMetalEffect>
+            <soundWear>Wear_PowerArmor</soundWear>
+            <soundRemove>Remove_PowerArmor</soundRemove>
+        </apparel>
+        <generateCommonality>0</generateCommonality>
+        <thingSetMakerTags/>
+        <generateAllowChance>0</generateAllowChance>
+    </ThingDef>
+</Defs>

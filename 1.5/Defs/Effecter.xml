@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!-- 地刺 -->
+    <FleckDef ParentName="FleckBase_RandomGraphic">
+        <defName>BMN_GroundSpikeCracks</defName>
+        <randomGraphics>
+            <li>
+                <texPath>Hjx_BiomassNucleus/GroundCracks</texPath>
+                <drawSize>(4,4)</drawSize>
+                <graphicClass>Graphic_Fleck</graphicClass>
+            </li>
+        </randomGraphics>
+        <altitudeLayer>MoteLow</altitudeLayer>
+        <fadeInTime>0.1</fadeInTime>
+        <solidTime>3.8</solidTime>
+        <fadeOutTime>0.8</fadeOutTime>
+    </FleckDef>
+
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>BMN_GroundSpikeRing</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0</fadeInTime>
+        <solidTime>0.1</solidTime>
+        <fadeOutTime>0.2</fadeOutTime>
+        <growthRate>200</growthRate>
+        <graphicData>
+            <texPath>Things/Mote/HoraxianLineGlow</texPath>
+            <graphicClass>Graphic_FleckPulse</graphicClass>
+            <shaderType>MoteMultiplyAddCircular</shaderType>
+            <color>(1, 1, 1, .1)</color>
+            <shaderParameters>
+                <_DistortionTex>/Things/Mote/RadiationDistortion_A</_DistortionTex>
+                <_texAScale>0.5</_texAScale>
+                <_texBScale>2</_texBScale>
+                <_texAScrollSpeed>0</_texAScrollSpeed>
+                <_texBScrollSpeed>-0.4</_texBScrollSpeed>
+                <_Intensity>0.5</_Intensity>
+                <_InnerFadeAmount>0</_InnerFadeAmount>
+                <_DistortionIntensity>0.5</_DistortionIntensity>
+                <_TexAScaleDivisorPerProgress>1</_TexAScaleDivisorPerProgress>
+            </shaderParameters>
+            <drawSize>(0.3,0.3)</drawSize>
+        </graphicData>
+    </FleckDef>
+
+    <FleckDef ParentName="FleckBase_RandomGraphic">
+        <defName>BMN_GroundSpike_Stab</defName>
+        <randomGraphics>
+            <li>
+                <texPath>Hjx_BiomassNucleus/StabA</texPath>
+                <drawSize>(2,2)</drawSize>
+                <graphicClass>Graphic_Fleck</graphicClass>
+            </li>
+            <li>
+                <texPath>Hjx_BiomassNucleus/StabB</texPath>
+                <drawSize>(2,2)</drawSize>
+                <graphicClass>Graphic_Fleck</graphicClass>
+            </li>
+        </randomGraphics>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <fadeInTime>0.1</fadeInTime>
+        <solidTime>0.8</solidTime>
+        <fadeOutTime>0.1</fadeOutTime>
+        <scalers>
+            <li>
+                <scaleTime>1</scaleTime>
+                <scaleAmt>1</scaleAmt>
+                <curve>
+                    <points>
+                        <li>(0,0)</li>
+                        <li>(0.2,1)</li>
+                        <li>(0.8,1)</li>
+                        <li>(1,0)</li>
+                    </points>
+                </curve>
+            </li>
+        </scalers>
+    </FleckDef>
+
+    <!-- 同化粒子 -->
+    <ThingDef ParentName="MoteBase">
+        <defName>Mote_BMN_Integrate</defName>
+        <thingClass>MoteAttached</thingClass>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <mote>
+            <fadeInTime>0.1</fadeInTime>
+            <fadeOutTime>0.1</fadeOutTime>
+            <solidTime>2</solidTime>
+            <needsMaintenance>false</needsMaintenance>
+        </mote>
+        <graphicData>
+            <graphicClass>Graphic_Mote</graphicClass>
+            <shaderType>Mote</shaderType>
+            <texPath>Hjx_BiomassNucleus/IntegrateRoots</texPath>
+            <drawSize>(1.2, 1.2)</drawSize>
+        </graphicData>
+    </ThingDef>
+
+    <!-- 冲锋斩杀 -->
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>BMN_BladeSprint</defName>
+        <fadeInTime>0</fadeInTime>
+        <solidTime>0.2</solidTime>
+        <fadeOutTime>1</fadeOutTime>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <growthRate>0</growthRate>
+        <graphicData>
+            <texPath>Hjx_BiomassNucleus/BladeSprint</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1</drawSize>
+            <renderQueue>3200</renderQueue>
+        </graphicData>
+    </FleckDef>
+
+    <!-- 冲锋斩杀全套视觉效果类型 -->
+    <EffecterDef>
+        <defName>BMN_BladeSprint</defName>
+        <offsetTowardsTarget>0</offsetTowardsTarget>
+        <!-- 子效果序列 -->
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+                <fleckDef>BMN_BladeSprint</fleckDef>
+                <initialDelayTicks>0</initialDelayTicks>
+                <scale>3</scale>
+                <burstCount>1</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <absoluteAngle>false</absoluteAngle>
+                <positionRadius>0.1</positionRadius>
+                <positionRadiusMin>0</positionRadiusMin>
+                <angle>0~10</angle>
+                <speed>0</speed>
+                <rotation>40~320</rotation>
+                <fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+                <fleckDef>BMN_BladeSprint</fleckDef>
+                <initialDelayTicks>2</initialDelayTicks>
+                <scale>3</scale>
+                <burstCount>1</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <absoluteAngle>false</absoluteAngle>
+                <positionRadius>0.15</positionRadius>
+                <positionRadiusMin>0</positionRadiusMin>
+                <angle>0~10</angle>
+                <speed>0</speed>
+                <rotation>40~320</rotation>
+                <fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+                <fleckDef>BMN_BladeSprint</fleckDef>
+                <initialDelayTicks>4</initialDelayTicks>
+                <scale>3</scale>
+                <burstCount>1</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <absoluteAngle>false</absoluteAngle>
+                <positionRadius>0.2</positionRadius>
+                <positionRadiusMin>0</positionRadiusMin>
+                <angle>0~10</angle>
+                <speed>0</speed>
+                <rotation>40~320</rotation>
+                <fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+                <fleckDef>BMN_BladeSprint</fleckDef>
+                <initialDelayTicks>6</initialDelayTicks>
+                <scale>3</scale>
+                <burstCount>1</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <absoluteAngle>false</absoluteAngle>
+                <positionRadius>0.15</positionRadius>
+                <positionRadiusMin>0</positionRadiusMin>
+                <angle>0~10</angle>
+                <speed>0</speed>
+                <rotation>40~320</rotation>
+                <fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+                <fleckDef>BMN_BladeSprint</fleckDef>
+                <initialDelayTicks>8</initialDelayTicks>
+                <scale>3</scale>
+                <burstCount>1</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <absoluteAngle>false</absoluteAngle>
+                <positionRadius>0.2</positionRadius>
+                <positionRadiusMin>0</positionRadiusMin>
+                <angle>0~10</angle>
+                <speed>0</speed>
+                <rotation>10~370</rotation>
+                <fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+            </li>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerTriggeredDelayed</subEffecterClass>
+                <fleckDef>BMN_BladeSprint</fleckDef>
+                <initialDelayTicks>10</initialDelayTicks>
+                <scale>3</scale>
+                <burstCount>1</burstCount>
+                <spawnLocType>OnSource</spawnLocType>
+                <absoluteAngle>false</absoluteAngle>
+                <positionRadius>0.2</positionRadius>
+                <positionRadiusMin>0</positionRadiusMin>
+                <angle>0~10</angle>
+                <speed>0</speed>
+                <rotation>40~320</rotation>
+                <fleckUsesAngleForVelocity>True</fleckUsesAngleForVelocity>
+            </li>
+        </children>
+    </EffecterDef>
+
+    <!-- 同化预热特效 -->
+    <EffecterDef>
+        <defName>BMN_Integrate_Warmup</defName>
+        <children>
+            <li>
+                <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+                <positionRadius>0.2</positionRadius>
+                <positionOffset>(0, 0, 0.5)</positionOffset>
+                <ticksBetweenMotes>25</ticksBetweenMotes>
+                <fleckDef>BMN_IntegrateSplash</fleckDef>
+                <burstCount>1</burstCount>
+                <color>(210, 50, 0)</color>
+                <speed>-1.5</speed>
+                <rotateTowardsTargetCenter>true</rotateTowardsTargetCenter>
+                <fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+                <spawnLocType>RandomDrawPosOnTarget</spawnLocType>
+                <attachToSpawnThing>true</attachToSpawnThing>
+            </li>
+        </children>
+    </EffecterDef>
+
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>BMN_IntegrateSplash</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <solidTime>0.15</solidTime>
+        <fadeOutTime>0.15</fadeOutTime>
+        <graphicData>
+            <texPath>Hjx_BiomassNucleus/IntegrateSplash</texPath>
+            <shaderType>Mote</shaderType>
+            <color>(0.9,0,0,0.8)</color>
+        </graphicData>
+    </FleckDef>
+</Defs>

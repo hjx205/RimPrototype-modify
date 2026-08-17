@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <GeneDef>
+        <defName>BMN_Black_Light_Domaint</defName>
+        <label>black_light_domaint</label>
+        <description>The genes produced by the Evolver itself serve no purpose beyond enabling the extraction of Archite genes when expressed as dominant. However, when injected into another human body, this gene subtly alters the recipient's genetic makeup. After undergoing a series of so-called genetic screening processes, the recipient becomes an Evolver.</description>
+        <iconPath>Hjx_BiomassNucleus/Gene_blacklight_domaint</iconPath>
+        <geneClass>Hjx_BiomassNucleus.Gene_BL_domaint</geneClass>
+        <biostatCpx>4</biostatCpx>
+        <biostatMet>2</biostatMet>
+        <customEffectDescriptions>
+            <li>When this gene is present, the Archite gene can be extracted, becoming an opportunity for evolution.</li>
+        </customEffectDescriptions>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>BMN_Black_Light_Recessive</defName>
+        <label>black_light_recessive</label>
+        <description>Recessive gene, this signifies that it has become part of the character's endogene, marking the birth of an Evolver. Possessing this gene allows the character to add one archite gene to their  endogene every 15 to 20 days. There is a cap on the number of extraordinary genes that can be added to the lineage gene: 2 before age 10, 4 between ages 10 and 30, and 6 between ages 30 and 60.</description>
+        <iconPath>Hjx_BiomassNucleus/Gene_blacklight_recessive</iconPath>
+        <geneClass>Hjx_BiomassNucleus.Gene_BL_recessive</geneClass>
+        <minAgeActive>3</minAgeActive>
+        <biostatCpx>6</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <customEffectDescriptions>
+            <li>Possessing the abilities of an Evolver allows one to alter their own  endogenes (irreversibly).</li>
+        </customEffectDescriptions>
+    </GeneDef>
+</Defs>

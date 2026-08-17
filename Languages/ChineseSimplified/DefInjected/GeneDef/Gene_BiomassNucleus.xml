@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <BMN_Black_Light_Domaint.label>黑光-显性</BMN_Black_Light_Domaint.label>
+    <BMN_Black_Light_Domaint.description>进化者自己产生的基因，当该基因呈现为显性时，本身除了可以将超凡基因一起被提取出来以外，没有什么其他作用。但当这个基因被注入到其他人体内时，会潜移默化的改变其他人的基因。在经历过一系列所谓的基因的筛选后，被注入者会成为进化者。\n注意：首次成为进化者时，角色的异种基因会被覆盖</BMN_Black_Light_Domaint.description>
+    <BMN_Black_Light_Domaint.customEffectDescriptions.0>当基因为显性时，超凡基因可以被提取，让被注入者有成为进化者的机会</BMN_Black_Light_Domaint.customEffectDescriptions.0>
+
+    <BMN_Black_Light_Recessive.label>黑光-隐性</BMN_Black_Light_Recessive.label>
+    <BMN_Black_Light_Recessive.description>隐性基因，意味着这已经成为了角色的系谱基因，也标志着进化者的诞生。拥有该基因，角色会每隔15~20天将一个超凡基因加入到系谱基因中。把超凡基因加入到系谱基因的数量有上限，10岁之前为2个，10~30岁为4个，30~60岁为6个。</BMN_Black_Light_Recessive.description>
+    <BMN_Black_Light_Recessive.customEffectDescriptions.0>拥有进化者的相关能力，可以更改自己的系谱基因(不可逆)</BMN_Black_Light_Recessive.customEffectDescriptions.0>
+</LanguageData>

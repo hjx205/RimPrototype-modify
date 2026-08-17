@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <BMN_BiomassNucleus.label>怪异心脏</BMN_BiomassNucleus.label>
+    <BMN_BiomassNucleus.description>由一堆黑色的液态金属般的物质聚合而成的“心脏”。即便没有外部循环的供应，它也在照常的跳动着。</BMN_BiomassNucleus.description>
+    <BMN_BiomassNucleus.comps.CompUsable.useLabel>使用{0_label}</BMN_BiomassNucleus.comps.CompUsable.useLabel>
+
+    <BMN_ClawformL.label>利爪形态</BMN_ClawformL.label>
+    <BMN_ClawformL.description>------</BMN_ClawformL.description>
+
+    <BMN_ClawformR.label>利爪形态</BMN_ClawformR.label>
+    <BMN_ClawformR.description>------</BMN_ClawformR.description>
+
+    <BMN_Bladeform.label>利刃形态</BMN_Bladeform.label>
+    <BMN_Bladeform.description>------</BMN_Bladeform.description>
+
+    <BMN_Building_BiomassNode.label>生物质节点</BMN_Building_BiomassNode.label>
+    <BMN_Building_BiomassNode.description>--------</BMN_Building_BiomassNode.description>
+
+    <PrototypeHelmet.label>原形体面甲</PrototypeHelmet.label>
+    <PrototypeHelmet.description>由宿主的生物质转换而来的如黑色液体般的物质在体表形成的面甲，在起到保护作用的同时，还能增强宿主的视觉能力和呼吸能力</PrototypeHelmet.description>
+
+    <PrototypeArmor.label>原形体装甲</PrototypeArmor.label>
+    <PrototypeArmor.description>由宿主的生物质转换而来的如黑色液体般的物质在体表形成的装甲，在能够适应伤害的同时，还能够提高宿主的各项身体机能</PrototypeArmor.description>
+</LanguageData>
